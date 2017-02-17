@@ -20,6 +20,17 @@ A simple Python Flask-based implementation of the IIIF Image API
 4. do `python app.py`
 5. You now have a simple IIIF server running at http://127.0.0.1:8080
 
+## Configuration
+
+Want to *enable CORS*?
+
+Touch/create the file `settings.cfg` within the `configs/` directory with the following contents:
+
+    [server]
+    cors = 1
+
+For a list of other configurable options, see file `configs/__init__.py` which is responsible for parsing the configuration options specified in settings.cfg or setting sane defaults in the absence of a specified option.
+
 ## Quick Start
 
 List all known identifiers
